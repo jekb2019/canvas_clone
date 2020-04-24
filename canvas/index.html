@@ -4,32 +4,55 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
         <title>Canvas</title>
     </head>
     <body>
+        
+        <!-- Header -->
         <header>
-            <div class="menu-icon"></div>
-            <div class="page-title"></div>
-            <div class="view-icon"></div>
+            <div class="hamburger-icon"><i class="fas fa-bars"></i></div>
+            <div class="page-title"><span>Dashboard</span></div>
+            <div class="more-icon"><i class="fas fa-ellipsis-v"></i></div>
         </header>
+        <!-- Course Selection -->
         <section id="courses">
-            <div class="course"></div>
-            <div class="course"></div>
-            <div class="course"></div>
-            <div class="course"></div>
-            <div class="course"></div>
+            <!-- Single Course -->
+            <div class="course">
+                <div class="top-image">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+                <div class="metadata">
+                    <div class="descriptions">
+                        <span class="full-name"></span>
+                        <span class="short-name"></span>
+                        <span class="semester"></span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-bullhorn"></i>
+                        <i class="far fa-folder"></i>
+                        <i class="far fa-file-alt"></i>
+                    </div>
+                </div>
+            </div>
+
         </section>
+        <!-- To Do list -->
         <secrion id="to-do">
             <div class="heading"></div>
             <div class="announcement"></div>
         </secrion>
+        <!-- Recent Feedback list -->
         <section id="recent-feedback">
             <div class="heading"></div>
             <div class="feedback"></div>
         </section>
+        <!-- View Grade Button -->
         <section class="view-grades">
             <button class="view-grades-btn">View Grades</button>
         </section>
+        <!-- Footer -->
         <footer>
             <div class="ToS"></div>
             <div class="policy"></div>

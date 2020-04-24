@@ -1,0 +1,10 @@
+Hamburgur Icon
+<i class="fas fa-bars"></i>
+v-ellipsis
+<i class="fas fa-ellipsis-v"></i>
+folder
+<i class="far fa-folder"></i>
+document
+<i class="far fa-file-alt"></i>
+megaphone
+<i class="fas fa-bullhorn"></i>
