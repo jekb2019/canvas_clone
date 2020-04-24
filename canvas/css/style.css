@@ -1,5 +1,31 @@
-/* For All Screen Size */
+*{
+    margin:0;
+    padding:0;
+}
+/* Mobile */
+header{
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width:100%;
+    padding: 12px;
+    font-size: 15px;
+    color: white;
+    background-color: #00457C;
+}
 
+#course-list .course{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 100%;
+}
+#course-list .course .top-image{
+    background-color: lightpink;
+}
 /*  Greater than 640px*/
 @media screen and (min-width:640px){
 
