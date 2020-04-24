@@ -8,3 +8,7 @@ document
 <i class="far fa-file-alt"></i>
 megaphone
 <i class="fas fa-bullhorn"></i>
+X
+<i class="fas fa-times"></i>
+Tick
+<i class="fas fa-check"></i>
