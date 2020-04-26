@@ -1,3 +1,5 @@
 font awesome - make font lighter
 
 what is line-height in css?
+
+color 전부 var() 로 바꾸기

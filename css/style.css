@@ -9,6 +9,7 @@
     --green-dark-color:#177B63;
     --green-color:#008400;
     --gray-dark-color:#324A4D;
+    --gray-light-color:gray;
 
     /* Size */
     /* --padding: 12px; */
@@ -19,6 +20,8 @@
     --font-medium: 20px;
     --font-small: 18px;
     --font-micro: 15px;
+    --font-Xmicro: 12px;
+    --font-XXmicro: 10px;
 }
 
 *{
@@ -153,7 +156,77 @@ header .more-icon i{
     line-height: 3;
 }
 /* SECTION: To Do List */
-
+#to-do{
+    margin: 80px 15px 20px 15px;
+}
+.heading{
+    border-bottom: 0.5px solid var(--gray-light-color);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+.heading span{
+    font-size: var(--font-small);
+}
+#to-do .announcement .to-do-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+#to-do .announcement .to-do-content .details-container{
+    display: flex;
+}
+#to-do .announcement .to-do-content .details-container i{
+    font-size: var(--font-micro);
+    margin-right: 10px;
+}
+#to-do .announcement .to-do-content .details-container .details{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-Xmicro);
+}
+#to-do .announcement .to-do-content .details-container .details #to-do-title a{
+    color:var(--navy-color);
+    margin-bottom: 5px;
+    font-size: var(--font-Xmicro);
+    text-decoration: none;
+}
+#to-do .announcement .to-do-content .details-container .details #to-do-title a:hover{
+    text-decoration: underline;
+    color:var(--black-color);
+}
+#to-do .announcement .to-do-content .details-container .details #to-do-course{
+    color:var(--gray-light-color);
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+#to-do .announcement .to-do-content .details-container .details #to-do-date{
+    color:var(--gray-light-color);
+    width: fit-content;
+    padding-right: 8px;
+    border-right: 1px solid lightgray;
+}
+#to-do .announcement .to-do-content i{
+    font-size: var(--font-micro);
+    height: fit-content;
+    padding: 8px;
+    border-radius: 3px;
+}
+#to-do .announcement .to-do-content i:hover{
+    background-color: #f2f2f2;
+    transition: 0.3s;
+}
+    /* Show all Clickable */
+#to-do .announcement .show-all{
+    text-align: center;
+}
+#to-do .announcement .show-all a{
+    color:var(--navy-color);
+    font-size: var(--font-micro);
+    text-decoration: none;
+}
+#to-do .announcement .show-all a:hover{
+    text-decoration: underline;
+}
 
 
 /* Media Queries */
