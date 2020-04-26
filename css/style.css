@@ -16,7 +16,7 @@
     /* --avatar-size: 36px; */
 
     /* Font Size */
-    --font-large: 25px;
+    --font-large: 22px;
     --font-medium: 20px;
     --font-small: 18px;
     --font-micro: 15px;
@@ -42,20 +42,20 @@ header{
     justify-content: space-between;
     box-sizing: border-box;
     width:100%;
-    height: 70px;
+    height: 50px;
     padding: 12px;
     font-size: var(--font-large);
     color: var(--white-color);
     background-color: var(--navy-color);
 }
 header .hamburger-icon i{
-    line-height: 1.7;
+    line-height: 1.2;
 }
 header .page-title span{
-    line-height: 1.7;
+    line-height: 1.2;
 }
 header .more-icon i{
-    line-height: 1.7;
+    line-height: 1.2;
 }
 
 /* SECTION: Course List */
@@ -134,17 +134,30 @@ header .more-icon i{
 #course-list .course .metadata .descriptions .full-name{
     /* Default color: grey */
     color:grey;
+    width: 100%;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
     margin-bottom: 1px;
     font-size: var(--font-small);
     font-weight: bold;
+
 }
 #course-list .course .metadata .descriptions .short-name{
     color:#6C757C;
     font-size: var(--font-medium);
+    width: 100%;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space:nowrap
 }
 #course-list .course .metadata .descriptions .semester{
     color:grey;
     font-size: var(--font-micro);
+    width: 100%;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space:nowrap
 }
 #course-list .course .metadata .icons{
     display: flex;
