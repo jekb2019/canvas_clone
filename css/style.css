@@ -297,6 +297,30 @@ header .more-icon i{
     border-radius: 4px;
     border: #C7CDD1 0.5px solid;
 }
+
+/* Footer */
+footer{
+    margin:15px;
+    padding: 20px;
+    border-top: 0.5px solid var(--gray-light-color);
+}
+footer .logo{
+    text-align: center;
+}
+footer .help-collection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer .help{
+    font-size: var(--font-micro);
+    margin: 5px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 0.5px solid var(--navy-color);
+}
+
+
 /* Media Queries */
 /*  Greater than 640px*/
 @media screen and (min-width:640px){
