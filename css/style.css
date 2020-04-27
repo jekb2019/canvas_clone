@@ -241,7 +241,49 @@ header .more-icon i{
     text-decoration: underline;
 }
 
-
+/* Recent Feedback */
+#recent-feedback{
+    margin: 15px;
+}
+#recent-feedback .feedback-content{
+    display: flex; 
+    margin-bottom: 20px;
+}
+#recent-feedback .feedback-content i{
+    color:green;
+}
+#recent-feedback .feedback-content .metadata{
+    display: flex; 
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: var(--font-Xmicro);
+    color:var(--gray-light-color);
+}
+#recent-feedback .feedback-content .metadata .feedback-title{
+    color:var(--navy-color);
+    font-size: var(--font-micro);
+}
+#recent-feedback .feedback-content .metadata .course-name{
+    margin-top:3px;
+    margin-bottom: 2px;
+}
+#recent-feedback .feedback-content .metadata .grade{
+    font-weight: bold;
+}
+#recent-feedback .feedback-content:hover span{
+    text-decoration: underline;
+    text-decoration-color: var(--navy-color);
+}
+    /* More feedback */
+#recent-feedback .more-feedback a{
+    color:var(--navy-color);
+    font-size: var(--font-XXmicro);
+    text-decoration: none;
+}
+#recent-feedback .more-feedback a:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--navy-color);
+}
 /* Media Queries */
 /*  Greater than 640px*/
 @media screen and (min-width:640px){
