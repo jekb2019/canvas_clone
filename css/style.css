@@ -107,6 +107,9 @@ header .more-icon i{
     height: 300px;
     box-shadow: 0px 1px 5px grey;
 }
+#course-list .course:hover{
+    box-shadow: 0px 1px 15px grey;
+}
 #course-list .course .top-image{
     height: 55%;
     display: flex;
@@ -118,11 +121,21 @@ header .more-icon i{
     font-size: var(--font-large);
     color: white;
 }
+#course-list .course .top-image i:hover{
+    color: var(--navy-color);
+    transition: 0.3s;
+}
 #course-list .course .metadata{
     background-color:white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     height: 45%;
+}
+#course-list .course .metadata .icons i:hover{
+    color:var(--navy-color);
+    transition: 0.2s;
+    margin: auto, auto;
+    cursor: pointer;
 }
 #course-list .course .metadata .descriptions{
     margin-left: 15px;
@@ -319,7 +332,13 @@ footer .help{
     padding-right: 10px;
     border-right: 0.5px solid var(--navy-color);
 }
-
+footer .help a{
+    text-decoration: none;
+    color: var(--navy-color);
+}
+footer .help a:hover{
+    text-decoration: underline;
+}
 
 /* Media Queries */
 /*  Greater than 640px*/
