@@ -50,6 +50,9 @@ header{
     color: var(--white-color);
     background-color: var(--navy-color);
 }
+header i:hover{
+    color:var(--gray-light-color);
+}
 header .hamburger-icon i{
     line-height: 1.2;
 }
@@ -113,7 +116,15 @@ header .more-icon i{
     margin-right: 10px;
     font-size: var(--font-very-large);
 }
-
+    /* My Signature */
+#right-side-bar .full-side-bar-wrapper .signature{
+    position: fixed;
+    bottom:50px;
+    left:110px;
+}    
+#right-side-bar .full-side-bar-wrapper .signature #jason{
+    font-size: var(--font-XXmicro);
+}
 
 /* SECTION: Course List */
 
