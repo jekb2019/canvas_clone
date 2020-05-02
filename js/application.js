@@ -22,5 +22,19 @@ for(const singleCourse of courses){
         }
     });
 }
+// Right side bar open and close
 
+document.querySelector("#right-side-bar .full-side-bar-wrapper .side-bar-header i").addEventListener("click", closeSideBar);
+document.querySelector("header .hamburger-icon").addEventListener("click", openSideBar);
+
+function closeSideBar(){
+    document.querySelector("#right-side-bar .full-side-bar-wrapper").setAttribute(
+        "style", "transform: translateX(-400px); transition: 0.5s;"
+    );
+}
+function openSideBar(){
+    document.querySelector("#right-side-bar .full-side-bar-wrapper").setAttribute(
+        "style", "transform: translateX(0px); transition: 0.5s;"
+    );
+}
 
