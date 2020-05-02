@@ -12,3 +12,19 @@ X
 <i class="fas fa-times"></i>
 Tick
 <i class="fas fa-check"></i>
+Dashboard
+<i class="fas fa-tachometer-alt"></i>
+Account
+<i class="far fa-user-circle"></i>
+Book
+<i class="fas fa-book"></i>
+People
+<i class="fas fa-user-friends"></i>
+Calender
+<i class="far fa-calendar-check"></i>
+Inbox
+<i class="fas fa-inbox"></i>
+Help
+<i class="far fa-question-circle"></i>
+Right Arrow Bodyless
+<i class="fas fa-chevron-right"></i>

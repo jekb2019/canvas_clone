@@ -58,6 +58,16 @@ header .more-icon i{
     line-height: 1.2;
 }
 
+/* SECTION: Right Side Bar */
+#right-side-bar .full-side-bar-wrapper{
+    position: fixed;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 1;
+}
+
 /* SECTION: Course List */
 
     /* Specific four course 1 */
@@ -106,6 +116,7 @@ header .more-icon i{
     background-color: grey;
     height: 300px;
     box-shadow: 0px 1px 5px grey;
+    cursor: pointer;
 }
 #course-list .course:hover{
     box-shadow: 0px 1px 15px grey;
@@ -135,7 +146,6 @@ header .more-icon i{
     color:var(--navy-color);
     transition: 0.2s;
     margin: auto, auto;
-    cursor: pointer;
 }
 #course-list .course .metadata .descriptions{
     margin-left: 15px;
