@@ -205,6 +205,16 @@ header .more-icon i{
     transition: 0.2s;
     margin: auto, auto;
 }
+#course-list .course .metadata .icons .noti{
+    font-size: var(--font-micro);
+    padding: 1px 5px;
+    background-color: var(--navy-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    position: relative;
+    top: -12px;
+    left: -12px;
+}
 #course-list .course .metadata .descriptions{
     margin-left: 15px;
     margin-right: 15px;
