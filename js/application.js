@@ -40,3 +40,15 @@ function openSideBar(){
     );
 }
 
+//Dashboard view menu open and close
+const dropdownBubble = document.querySelector("header .dropdown-bubble");
+document.querySelector("header .more-icon").addEventListener("click",function(){
+    let displayAtt = getComputedStyle(dropdownBubble).display;
+    console.log(displayAtt);
+    //toggle open and close
+    if(displayAtt === "none"){
+        dropdownBubble.style.display = "block";
+    }else{
+        dropdownBubble.style.display = "none";
+    }
+})

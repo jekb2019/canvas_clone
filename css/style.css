@@ -66,9 +66,8 @@ header .more-icon i{
     cursor: pointer;
 }
 header .dropdown-bubble{
-    width: 130px;
-    height: 150px;
-    padding: 5px;
+    width: 170px;
+    height: 190px;
     background-color: white;
     position: absolute;
     right: 10px;
@@ -77,6 +76,7 @@ header .dropdown-bubble{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    display: none;
 }
 header .dropdown-bubble:after{
     border-top:0px solid transparent;
@@ -86,27 +86,40 @@ header .dropdown-bubble:after{
     content:"";
     position:absolute;
     top: -7px;
-    left: 126px;
+    left: 155px;
 }
 header .dropdown-bubble span{
     color: black;
-    font-size: var(--font-micro);
-}
-header .dropdown-bubble #dashboard-view-menu span{
-    font-weight: bold;
+    font-size: var(--font-small);
 }
 header .dropdown-bubble #dashboard-view-menu{
     height: 20%;
-    border-bottom: 1px solid var(--gray-very-color) ;
+    text-align: center;
+    margin: 3px;
+}
+header .dropdown-bubble #dashboard-view-menu span{
+    font-weight: bold;
+    line-height: 2.3;
 }
 header .dropdown-bubble #dashboard-views{
-    height: 70%;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+}
+header .dropdown-bubble #dashboard-views hr{
+    margin-right: 20px;
+    margin-left: 20px;
+    color: var(--gray-light-color);
+}
+header .dropdown-bubble #dashboard-views span{
+    height: 25%;
+    padding-left:35px;
+    line-height: 2;
 }
 header .dropdown-bubble #dashboard-views span:hover{
-    background-color: var(--gray-very-light-color);
+    background-color: var(--navy-color);
+    color: var(--white-color);
+    transition: 0.2s;
 }
 /* SECTION: Right Side Bar */
 #right-side-bar .full-side-bar-wrapper{
