@@ -29,13 +29,6 @@ const rightSideBar = document.querySelector("#right-side-bar .full-side-bar-wrap
 const rsbExitIcon = document.querySelector("#right-side-bar .full-side-bar-wrapper .side-bar-header i");
 const rsbHamburberIcon = document.querySelector("header .hamburger-icon");
 
-//STILL WORKING ON THIS CODE 6/5
-// const rsbHeader = document.querySelector("#right-side-bar .full-side-bar-wrapper .side-bar-header");
-// const rsbMenuList = document.querySelector("#right-side-bar .full-side-bar-wrapper .menu-list");
-// const rsbMySignature =  document.querySelector("#right-side-bar .full-side-bar-wrapper .signature");
-// const rsbMenu =  document.querySelector("#right-side-bar .full-side-bar-wrapper .menu-list .menu");
-// const rsbMenuMetadata =  document.querySelector("#right-side-bar .full-side-bar-wrapper .menu-list .menu .menu-metadata");
-
 let isRsbOpen = false;
 // Right side bar open and close
 rsbExitIcon.addEventListener("click", closeSideBar);
@@ -54,36 +47,30 @@ function openSideBar(){
     isRsbOpen = true;
 }
 
-//STILL WORKING ON THIS CODE 6/5
-//close right side bar when outside mouse up detected
-// window.addEventListener("mouseup",function(event){
-//     let parent = event.target.parentNode;
-//     if(isRsbOpen && event.target != rightSideBar && parent != rightSideBar && parent != rsbHeader && parent != rsbMenuList && parent != rsbMySignature && parent != rsbMenuMetadata && parent != rsbMenu){
-//         console.log("close!");
-//     }
-// });
-
-
 //Dropdown bubble menu related OBJECT REFERENCES
 const dropdownBubble = document.querySelector("header .dropdown-bubble");
 const ddbDashboardViewMenu = document.querySelector("header .dropdown-bubble #dashboard-view-menu")
 const ddbDashboardViews = document.querySelector("header .dropdown-bubble #dashboard-views")
+const ddbMoreBtn = document.querySelector("header .more-icon");
+
 
 //Dashboard view menu open and close
 document.querySelector("header .more-icon").addEventListener("click",function(){
+    console.log("dotdotdot");
     let displayAtt = getComputedStyle(dropdownBubble).display;
-    console.log(displayAtt);
     //toggle open and close
     if(displayAtt === "none"){
         dropdownBubble.style.display = "block";
+        console.log("dotdotdot1");
     }else{
         dropdownBubble.style.display = "none";
     }
 })
-
 //close dropdown menu when outside mouse up detected
 window.addEventListener("mouseup", function(event){
-    if(getComputedStyle(dropdownBubble).display == "block" && event.target != dropdownBubble && event.target.parentNode != dropdownBubble && event.target.parentNode != ddbDashboardViewMenu && event.target.parentNode != ddbDashboardViews){
+    if(getComputedStyle(dropdownBubble).display == "block" && event.target.parentNode != ddbMoreBtn && event.target != dropdownBubble && event.target.parentNode != dropdownBubble && event.target.parentNode != ddbDashboardViewMenu && event.target.parentNode != ddbDashboardViews){
+    console.log("any1");
         dropdownBubble.style.display = "none";
+        console.log("any2");
     }
 });
