@@ -493,6 +493,9 @@ footer .help a:hover{
     #to-do{
         clear: both;
     }
+}
+/* Greater than 767px */
+@media screen and (min-width:767px){
     /* Disable top header */
     header{
         background-color: rgba(244,244,244, 0.9);
@@ -504,10 +507,36 @@ footer .help a:hover{
     header .hamburger-icon{
         display: none;
     }
-}
-/* Greater than 767px */
-@media screen and (min-width:767px){
-    
+    /* Left Side Bar section */
+    #menu-content-divider{
+        display: flex;
+
+    }
+    #menu-divider{
+        background-color: var(--navy-color);
+    }
+    #right-side-bar .full-side-bar-wrapper{
+        position: relative;
+        top:0;
+        width: 80px;
+        height: 100%;
+        background-color: var(--navy-color);
+        z-index: 0;
+        padding: 20px;
+        transform: translateX(0px);
+    }
+    #right-side-bar .fa-chevron-right{
+        display: none;
+    }
+    #right-side-bar .menu .menu-metadata span{
+        display: none;
+    }
+    #right-side-bar .menu .menu-metadata{
+        color:white;
+    }
+    #right-side-bar img, .signature, #right-side-bar .fa-times{
+        display: none;
+    }
 }
 /* Greatern than 992px */
 @media screen and (min-width:992px){
