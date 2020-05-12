@@ -50,6 +50,7 @@ header{
     color: var(--white-color);
     background-color: var(--navy-color);
     cursor: default;
+    z-index: 1;
 }
 header i:hover{
     color:var(--gray-light-color);
@@ -483,8 +484,26 @@ footer .help a:hover{
 
 /* Media Queries */
 /*  Greater than 640px*/
-@media screen and (min-width:640px){
-
+@media screen and (min-width:650px){
+    /* Spread Courses */
+    #course-list .course{
+        width:300px;
+        float: left;
+    }
+    #to-do{
+        clear: both;
+    }
+    /* Disable top header */
+    header{
+        background-color: rgba(244,244,244, 0.9);
+        color:black;
+        font-size: var(--font-very-large); 
+        padding: 20px;
+        height: 70px;
+    }
+    header .hamburger-icon{
+        display: none;
+    }
 }
 /* Greater than 767px */
 @media screen and (min-width:767px){

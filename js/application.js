@@ -56,12 +56,10 @@ const ddbMoreBtn = document.querySelector("header .more-icon");
 
 //Dashboard view menu open and close
 document.querySelector("header .more-icon").addEventListener("click",function(){
-    console.log("dotdotdot");
     let displayAtt = getComputedStyle(dropdownBubble).display;
     //toggle open and close
     if(displayAtt === "none"){
         dropdownBubble.style.display = "block";
-        console.log("dotdotdot1");
     }else{
         dropdownBubble.style.display = "none";
     }
@@ -69,8 +67,6 @@ document.querySelector("header .more-icon").addEventListener("click",function(){
 //close dropdown menu when outside mouse up detected
 window.addEventListener("mouseup", function(event){
     if(getComputedStyle(dropdownBubble).display == "block" && event.target.parentNode != ddbMoreBtn && event.target != dropdownBubble && event.target.parentNode != dropdownBubble && event.target.parentNode != ddbDashboardViewMenu && event.target.parentNode != ddbDashboardViews){
-    console.log("any1");
         dropdownBubble.style.display = "none";
-        console.log("any2");
     }
 });
